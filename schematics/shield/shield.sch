@@ -66,7 +66,7 @@ Text GLabel 4600 2600 0    60   Input ~ 0
 V-inB
 Text GLabel 4600 2100 0    60   Input ~ 0
 V+inB
-Text GLabel 1150 1400 0    60   Input ~ 0
+Text GLabel 950  1400 0    60   Input ~ 0
 V+inA
 $Comp
 L GND #PWR01
@@ -101,13 +101,13 @@ RefB
 $Comp
 L POT-RESCUE-shield RV1
 U 1 1 57D5BE3A
-P 1550 1100
-F 0 "RV1" H 1550 886 50  0000 C CNN
-F 1 "10" H 1550 977 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 1550 1100 50  0001 C CNN
-F 3 "" H 1550 1100 50  0000 C CNN
-	1    1550 1100
-	-1   0    0    1   
+P 1250 1400
+F 0 "RV1" H 1250 1186 50  0000 C CNN
+F 1 "10" H 1250 1277 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 1250 1400 50  0001 C CNN
+F 3 "" H 1250 1400 50  0000 C CNN
+	1    1250 1400
+	0    -1   -1   0   
 $EndComp
 $Comp
 L INA2126 U2
@@ -401,12 +401,12 @@ $EndComp
 $Comp
 L R R5
 U 1 1 581DD452
-P 1150 1100
-F 0 "R5" V 1230 1100 50  0000 C CNN
-F 1 "0" V 1150 1100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1080 1100 50  0001 C CNN
-F 3 "" H 1150 1100 50  0000 C CNN
-	1    1150 1100
+P 1050 1100
+F 0 "R5" V 1130 1100 50  0000 C CNN
+F 1 "0" V 1050 1100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 980 1100 50  0001 C CNN
+F 3 "" H 1050 1100 50  0000 C CNN
+	1    1050 1100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -431,7 +431,7 @@ F 3 "" H 1400 2550 50  0000 C CNN
 	1    1400 2550
 	0    1    1    0   
 $EndComp
-Text GLabel 1150 3200 0    60   Input ~ 0
+Text GLabel 950  3200 0    60   Input ~ 0
 V+inB
 $Comp
 L GND #PWR011
@@ -458,13 +458,13 @@ $EndComp
 $Comp
 L POT-RESCUE-shield RV2
 U 1 1 581DE3CB
-P 1550 2900
-F 0 "RV2" H 1550 2686 50  0000 C CNN
-F 1 "10" H 1550 2777 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 1550 2900 50  0001 C CNN
-F 3 "" H 1550 2900 50  0000 C CNN
-	1    1550 2900
-	-1   0    0    1   
+P 1250 3200
+F 0 "RV2" H 1250 2986 50  0000 C CNN
+F 1 "10" H 1250 3077 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Bourns_3296Y_3-8Zoll_Angular_ScrewUp" H 1250 3200 50  0001 C CNN
+F 3 "" H 1250 3200 50  0000 C CNN
+	1    1250 3200
+	0    -1   -1   0   
 $EndComp
 Text GLabel 2000 3200 0    60   Input ~ 0
 V-inB
@@ -482,12 +482,12 @@ $EndComp
 $Comp
 L R R6
 U 1 1 581DE3E0
-P 1150 2900
-F 0 "R6" V 1230 2900 50  0000 C CNN
-F 1 "0" V 1150 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 1080 2900 50  0001 C CNN
-F 3 "" H 1150 2900 50  0000 C CNN
-	1    1150 2900
+P 1050 2900
+F 0 "R6" V 1130 2900 50  0000 C CNN
+F 1 "0" V 1050 2900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 980 2900 50  0001 C CNN
+F 3 "" H 1050 2900 50  0000 C CNN
+	1    1050 2900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -501,8 +501,6 @@ F 3 "" H 850 2700 50  0000 C CNN
 	1    850  2700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1700 2900
-NoConn ~ 1700 1100
 $Comp
 L R R15
 U 1 1 581E164C
@@ -866,9 +864,9 @@ Connection ~ 8400 1450
 Wire Wire Line
 	8800 1500 8700 1500
 Wire Wire Line
-	8700 1500 8700 1000
+	8700 1000 8700 1500
 Wire Wire Line
-	8700 1000 8400 1000
+	8400 1000 8700 1000
 Wire Wire Line
 	8400 1000 8400 1050
 Connection ~ 8600 1000
@@ -913,9 +911,9 @@ Connection ~ 8400 3600
 Wire Wire Line
 	8800 3650 8700 3650
 Wire Wire Line
-	8700 3650 8700 3150
+	8700 3150 8700 3650
 Wire Wire Line
-	8700 3150 8400 3150
+	8400 3150 8700 3150
 Wire Wire Line
 	8400 3150 8400 3200
 Connection ~ 8600 3150
@@ -945,18 +943,15 @@ Wire Wire Line
 Wire Wire Line
 	850  1050 850  1100
 Wire Wire Line
-	850  1100 1000 1100
+	850  1100 900  1100
 Wire Wire Line
-	1300 1100 1400 1100
+	1200 1100 1250 1100
 Wire Wire Line
 	1250 750  850  750 
 Wire Wire Line
-	1100 2100 1300 2100
+	1250 2100 1300 2100
 Wire Wire Line
 	1600 2100 2100 2100
-Wire Wire Line
-	1150 3200 1550 3200
-Connection ~ 1550 3200
 Connection ~ 1750 3900
 Wire Wire Line
 	1550 2550 2100 2550
@@ -970,19 +965,13 @@ Wire Wire Line
 Wire Wire Line
 	850  2850 850  2900
 Wire Wire Line
-	850  2900 1000 2900
+	850  2900 900  2900
 Wire Wire Line
-	1300 2900 1400 2900
+	1200 2900 1250 2900
 Wire Wire Line
 	1250 2550 850  2550
 Wire Wire Line
-	1100 3900 1300 3900
-Wire Wire Line
 	1600 3900 2100 3900
-Wire Wire Line
-	1100 3500 1550 3500
-Wire Wire Line
-	1550 3500 1550 3050
 Wire Wire Line
 	3850 1500 4000 1500
 Wire Wire Line
@@ -1045,14 +1034,17 @@ Wire Wire Line
 Wire Wire Line
 	1150 5900 1350 5900
 Wire Wire Line
-	1100 1700 1550 1700
-Connection ~ 1550 1400
+	1250 1100 1250 1250
 Wire Wire Line
-	1550 1700 1550 1250
+	950  1400 1100 1400
 Wire Wire Line
-	1150 1400 1550 1400
+	1250 3350 1250 3900
 Wire Wire Line
-	1100 1700 1100 2100
+	1100 3200 950  3200
 Wire Wire Line
-	1100 3500 1100 3900
+	1250 2900 1250 3050
+Wire Wire Line
+	1250 3900 1300 3900
+Wire Wire Line
+	1250 2100 1250 1550
 $EndSCHEMATC
