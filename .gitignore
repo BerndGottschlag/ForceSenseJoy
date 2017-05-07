@@ -1,0 +1,11 @@
+*.swp
+*~
+lufa/
+*.o
+*.d
+*.hex
+*.eep
+*.elf
+*.lss
+*.map
+*.sym
