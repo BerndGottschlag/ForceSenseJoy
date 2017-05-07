@@ -1103,6 +1103,4 @@ Wire Wire Line
 	1150 5750 1150 5900
 Wire Wire Line
 	1150 5900 1350 5900
-Text Notes -1300 5000 0    60   ~ 0
-Pinout MINI-DIN:\nVDD: braun\nGND: rot\nLATCH: schwarz\nCLOCK: grün\nDATA: gelb\n
 $EndSCHEMATC
