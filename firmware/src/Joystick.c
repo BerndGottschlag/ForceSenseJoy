@@ -37,7 +37,6 @@
 #include <avr/io.h>
 
 #include "Joystick.h"
-#include "commI2C.h"
 #include "commSPI.h"
 #include "auxFunctions.h"
 /** Buffer to hold the previously generated HID report, for comparison purposes inside the HID class driver. */
@@ -77,25 +76,10 @@ int main(void)
 
 
 
-	//I2C not implemented
-	//TWSR = 0;
-	//TWBR = 72;		// Setzt Busfrequenz auf 100kHz (S.231 Chipdoku)
-	//TWBR = 0xff;		// Setzt Busfrequenz auf 30kHz (S.231 Chipdoku)
-	
-
 	for (;;)
 	{
 		HID_Device_USBTask(&Joystick_HID_Interface);
 		USB_USBTask();
-		/*
-		I2C_Write(0x01);
-		PORTB |= (1<<PB5);
-		_delay_ms(1000);
-		PORTB &= ~(1<<PB5);
-		_delay_ms(1000);
-//		I2C_Write(0x02);
-		*/
-			
 	}
 }
 
