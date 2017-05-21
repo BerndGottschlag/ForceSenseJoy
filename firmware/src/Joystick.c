@@ -8,6 +8,7 @@
 
 /*
   Copyright 2015  Dean Camera (dean [at] fourwalledcubicle [dot] com)
+  Copyright 2017  Bernd Gottschlag
 
   Permission to use, copy, modify, distribute, and sell this
   software and its documentation for any purpose is hereby granted
