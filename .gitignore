@@ -9,3 +9,4 @@ lufa/
 *.lss
 *.map
 *.sym
+*.bin
