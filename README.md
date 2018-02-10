@@ -1,6 +1,7 @@
 # ForceSenseJoy
 
 This joystick measures the force applied by the user and not the deflection as done by conventional joysticks.
+<img src="/pictures/joystick.jpg" height="400">
 
 ## Operating principle
 
